@@ -2,19 +2,23 @@ class Dragon {
   constructor(dragonName, riderName) {
     this.name = dragonName;
     this.rider = riderName;
-    this.hungry = if (this.eat() < 3) {
-        true
-    }
+    this.eat = 1;
+    this.hungry = true;
+      if (this.eat > 3) {
+        this.hungry = true;
+      } else {
+      this.hungrey = false;
+      }
+  }
+  greet() {
+    return `Hi, ${this.rider}!`;
+  }
 
-  }
-  greet(){
-    return(`Hi, ${this.rider}!`)
-  }
-  eat(){
-    if (this.hungry < 3) {
-        return this.hungry = true
+  eat() {
+    if (this.eat >= 3) {
+      return true
     } else {
-        return this.hungry = false
+      return false
     }
   }
 }
