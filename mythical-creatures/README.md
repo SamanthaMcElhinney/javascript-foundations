@@ -14,9 +14,10 @@ Run the command `npm test mythical-creatures/test/unicorn-test.js`. To run other
 
 [Here is a video](https://youtu.be/wfrwMYn2BCg) that walks through the setup and first mythical creature. Please note that parts of this video may be outdated.
 
+
 ### Creature Order
 
-- [ ] `unicorn`
+- [x] `unicorn`
 - [ ] `dragon`
 - [ ] `vampire`
 - [ ] `hobbit`
