@@ -2,24 +2,16 @@ class Dragon {
   constructor(dragonName, riderName) {
     this.name = dragonName;
     this.rider = riderName;
-    this.eat = 1;
+    this.eatCount = 0;
     this.hungry = true;
-      if (this.eat > 3) {
-        this.hungry = true;
-      } else {
-      this.hungrey = false;
-      }
   }
   greet() {
     return `Hi, ${this.rider}!`;
   }
 
   eat() {
-    if (this.eat >= 3) {
-      return true
-    } else {
-      return false
-    }
+    this.eatCount += 1;
+    if (this.eatCount === 3) return (this.hungry = false);
   }
 }
 
