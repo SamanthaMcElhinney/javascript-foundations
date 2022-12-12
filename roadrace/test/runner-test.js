@@ -1,4 +1,4 @@
-var Runner = require("../src/runner.js");
+how to var Runner = require("../src/runner.js");
 var assert = require('chai').assert;
 
 describe("Runner", function() {

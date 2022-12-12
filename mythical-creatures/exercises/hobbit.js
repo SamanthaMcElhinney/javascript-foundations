@@ -1,11 +1,19 @@
 class Hobbit {
-    constructor(hobbit, age) {
-        this.name = hobbit.name;
+    constructor(Object) {
+        this.name = Object.name;
         this.age = 0
+        this.adult = false
     }
-celebrateBirthday() {
-    return this.age += 1
-}
+
+    celebrateBirthday () {
+         this.age += 1;
+        if (this. age === 32) {
+            return this.adult = false
+        } else {
+            return this. adult = true
+        }
+     
+    }
 }
 
 
