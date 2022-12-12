@@ -3,11 +3,11 @@ var Hobbit = require('../exercises/hobbit');
 
 describe('Hobbit', function() {
 
-  it.skip('should be a function', function() {
+  it ('should be a function', function() {
     assert.isFunction(Hobbit);
   });
 
-  it.skip('should have a name', function() {
+  it ('should have a name', function() {
     var bilbo = new Hobbit({ name: 'Bilbo' });
     var mark = new Hobbit({ name: 'Mark' });
 
@@ -15,13 +15,13 @@ describe('Hobbit', function() {
     assert.equal(mark.name, 'Mark');
   });
 
-  it.skip('should start out 0 years old', function() {
+  it ('should start out 0 years old', function() {
     var bilbo = new Hobbit({ name: 'Bilbo' });
 
     assert.equal(bilbo.age, 0);
   });
 
-  it.skip('should gain 1 year after every birthday', function() {
+  it ('should gain 1 year after every birthday', function() {
     var hobbit = new Hobbit({ name: 'Meriadoc' });
 
     hobbit.celebrateBirthday();
@@ -37,7 +37,7 @@ describe('Hobbit', function() {
     };
   };
 
-  it.skip('should be considered a child at the age of 32', function() {
+  it ('should be considered a child at the age of 32', function() {
     var hobbit = new Hobbit({ name: 'Taylor' });
 
     // Notice that timeTravel is a function in this file (lines 34 - 38). You do not need to put a timeTravel method in your Hobbit class. Look at the timeTravel function above...
