@@ -2,9 +2,9 @@ var assert = require("chai").assert;
 var Snowman = require("../src/Snowman");
 
 describe("Snowman", function () {
-  it.skip('should be able to have a carrot nose, snowballs for its body, coal for eyes and buttons for its mouth', function () {
+  it ('should be able to have a carrot nose, snowballs for its body, coal for eyes and buttons for its mouth', function () {
     var snowmanDetails1 = {
-      carrots: 1,
+      carrots: 1,localStorage
       coal: 2,
       buttons: 5,
       snowballs: 2
