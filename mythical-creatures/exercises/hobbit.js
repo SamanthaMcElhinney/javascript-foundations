@@ -1,4 +1,5 @@
 class Hobbit {
+    
     constructor(nameOfHobbit) {
         this.name = nameOfHobbit.name
         this.age = 0

@@ -1,6 +1,6 @@
 class Pirate {
-    constructor(name, job) {
-        this.name = name
+    constructor(pirateName, job) {
+        this.name = pirateName
         this.job = job || "scallywag";
         this.cursed = false
         this.booty = 0
@@ -18,10 +18,10 @@ class Pirate {
     }
 
     liftCurse() {
-        if (this.booty === 300 && this.cursed === true) {
-            return ('Your curse has been lifted!')
-        } else {
+        if (this.booty <= 300) {
             return ("You don't need to lift a curse!");
+        } else if (this.botty >= 300 && this.cursed === true){
+            return ('Your curse has been lifted!')
         }
     }
 }
