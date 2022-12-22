@@ -1,7 +1,7 @@
 class Pirate {
-    constructor(pirateName, job) {
+    constructor(pirateName, jobDetails) {
         this.name = pirateName
-        this.job = job || "scallywag";
+        this.job = jobDetails || "scallywag";
         this.cursed = false
         this.booty = 0
 
@@ -18,12 +18,16 @@ class Pirate {
     }
 
     liftCurse() {
-        if (this.booty <= 300) {
-            return ("You don't need to lift a curse!");
-        } else if (this.botty >= 300 && this.cursed === true){
-            return ('Your curse has been lifted!')
-        }
-    }
+        console.log(this.booty)
+     if (this.booty >= 300 && this.cursed === true) {
+        this.cursed = false
+        this.booty -= 300;
+        console.log('this.booty1', this.booty)
+        return 'Your curse has been lifted!'
+     } else {
+        return 'You don\'t need to lift a curse!';
+     }
+}
 }
 
 module.exports = Pirate;
