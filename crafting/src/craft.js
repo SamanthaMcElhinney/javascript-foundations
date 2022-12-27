@@ -12,7 +12,7 @@ class Craft {
     }
 
     calculateProjectTotal() {
-        
+          calculateMaterialCost();
     }
 }
 
