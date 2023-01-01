@@ -13,10 +13,11 @@ class Snack {
     removeItem(){
         if (this.itemsInStock > 0) {
             this.itemsInStock -= 1;
+            console.log('1', this.itemsInStock)
             return `Item taken! There are now ${this.itemsInStock} items left.`;
-        } else if (this.itemsInstock === 0) {
-            this.itemsInStock = 0
-            return `Sorry, no  hersey\'s milk chocolate left in stock!`;
+        }else if (this.itemsInStock === 0){
+            this.itemsinStock = 0
+            return `Sorry, no ${this.name} left in stock!`
         }
     }
 }

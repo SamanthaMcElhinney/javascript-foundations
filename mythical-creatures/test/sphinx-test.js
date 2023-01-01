@@ -6,7 +6,7 @@ describe('Sphinx', () => {
     assert.isFunction(Sphinx);
   });
 
-  it('should have no name', () => {
+  it('should have no name', () => { 
     // instantiate a Sphinx object with no arguments
 
     // assert that the spinx's name is null
@@ -59,7 +59,7 @@ describe('Sphinx', () => {
     assert.deepEqual(sphinx.riddles, [riddle2, riddle3, riddle4]);
   });
 
-  it('should accept a correct answer and remove riddle from list', () => {
+  it.only('should accept a correct answer and remove riddle from list', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',

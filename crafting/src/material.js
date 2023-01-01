@@ -16,7 +16,8 @@ class Material {
   }
 
   calculateMaterialCost() {
-    return this.price * this.amount
+    var materialCost = this.price * this.amount;
+    return materialCost
   }
 }
 // pri

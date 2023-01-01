@@ -12,7 +12,11 @@ class Craft {
     }
 
     calculateProjectTotal() {
-          calculateMaterialCost();
+        var totalCost = this.craft.materials
+        for (var i = 0; i < materials.length; i ++) {
+            console.log(materials[i].price)
+        }
+        return totalCost
     }
 }
 
